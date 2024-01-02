@@ -92,8 +92,6 @@ class BudgetCalcu {
            {
           Console.WriteLine($"{option[index]}: {cost[index]}");
            }
-           return;
-            }
               catch (Exception e)
                { 
              Console.WriteLine(e.Message);

@@ -6,16 +6,19 @@ class BudgetCalcu {
     bool try_Again = true;
     while (try_Again){
     try{
-    Console.Clear();	    
+	    
+    Console.Clear();
+    
     Console.Write("***********************$ Welcome to Money Mate: Your Budget Buddy $***********************\n");
     Console.Write("Enter month today(1-12): ");
-    string month = Console.ReadLine();
+    string month = Console.ReadLine();    
     Console.Write("Enter the day today: ");
     string day = Console.ReadLine();
     Console.Write("Enter the year today: ");
     string year = Console.ReadLine();
     Console.Write("Add wallet/amount of your budget: ");
     double wallet_amount = Convert.ToDouble(Console.ReadLine());
+    
     Console.Clear();
 
     Console.WriteLine("\t===================================$ TRANSACTION $===================================");

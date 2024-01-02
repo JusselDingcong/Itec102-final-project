@@ -4,8 +4,9 @@ class BudgetCalcu {
   static void Main() 
    {
     bool try_Again = true;
-    while (try_Again)
-    {
+    while (try_Again){
+    try{
+    Console.Clear();	    
     Console.Write("***********************$ Welcome to Money Mate: Your Budget Buddy $***********************\n");
     Console.Write("Enter month today(1-12): ");
     string month = Console.ReadLine();
@@ -17,8 +18,6 @@ class BudgetCalcu {
     double wallet_amount = Convert.ToDouble(Console.ReadLine());
     Console.Clear();
 
-    try
-    {
     Console.WriteLine("\t===================================$ TRANSACTION $===================================");
     Console.WriteLine("Your wallet/amount of your budget: " + wallet_amount);
     Console.WriteLine("Please select to spend your budget below.");
@@ -98,7 +97,7 @@ class BudgetCalcu {
              Console.WriteLine(e.Message);
               }
               finally{
-                 Console.WriteLine("Would you like to try again? (y/Y) / pres any key to close: ");
+                 Console.Write("Would you like to try again? (y/Y) / pres any key to close: ");
                  string yes = Console.ReadLine();
                   yes = yes.ToUpper();
                    if (yes == "Y")
@@ -108,6 +107,7 @@ class BudgetCalcu {
                      else
                    {
                      try_Again = false;
+	       Console.Clear();
                Console.WriteLine("Thank u for using me, comeback again next time:>!");
                    }
                 }
